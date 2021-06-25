@@ -1,0 +1,62 @@
+/*.message * {*/
+/*    border: 1px solid red;*/
+/*}*/
+
+.message {
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+}
+
+.avatar {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.avatar img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid darkgrey;
+    border-radius: 50px;
+}
+
+.arrow {
+    display: inline-block;
+    border: 20px solid transparent;
+    border-right: 20px solid darkgrey;
+    border-bottom: 20px solid darkgrey;
+}
+
+.messageBlock {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: white;
+}
+
+.blockName {
+    color: blueviolet;
+    width: 300px;
+    margin: 20px;
+}
+
+.blockMessage{
+    color: yellow;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.blockBottom {
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+}
+
+.blockTime {
+    display: inline-block;
+    color: green;
+    width: 50px;
+    height: 20px;
+}

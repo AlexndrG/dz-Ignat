@@ -1,0 +1,15 @@
+.button {
+    margin-right: 5px;
+}
+
+.low {
+    background-color: yellow;
+}
+
+.middle {
+    background-color: green;
+}
+
+.high {
+    background-color: red;
+}
