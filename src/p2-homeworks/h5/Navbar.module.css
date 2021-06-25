@@ -1,0 +1,19 @@
+.navbar {
+}
+
+.item {
+    display: inline-block;
+    min-width: 100px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.activeLink {
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+}

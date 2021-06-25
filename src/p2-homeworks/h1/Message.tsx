@@ -20,7 +20,6 @@ function Message(props: PropsType) {
                 <div className={s.messageBlock}>
                     <div className={s.blockName}>{props.name}</div>
                     <div className={s.blockMessage}>{props.message}</div>
-                    <div className={s.blockBottom}></div>
                     <div className={s.blockTime}>{props.time}</div>
                 </div>
             </div>
