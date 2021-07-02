@@ -5,7 +5,7 @@ export function Junior() {
         <div>
             <b>Page for future HomeWorks JUNIOR level.</b>
 
-            {/*<HW6/>*/}
+            {/*<HW7/>*/}
         </div>
     )
 }
