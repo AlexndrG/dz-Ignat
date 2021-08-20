@@ -8,8 +8,8 @@ function HW9() {
             <hr/>
             homeworks 9
 
-            {/*should work (должно работать)*/}
             <div className={s.main}>
+                {/*should work (должно работать)*/}
                 <Clock/>
             </div>
 

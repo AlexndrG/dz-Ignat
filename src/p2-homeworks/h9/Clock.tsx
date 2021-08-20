@@ -1,24 +1,22 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
-const getText = (n: number): string => {
-    return n < 10 ? '0' + n : '' + n
-}
+const zero = (a:number) => a < 10 ? '0'+a : a
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
-    const [date, setDate] = useState<Date>(new Date())
+    const [date, setDate] = useState<Date>(new Date)
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
         // stop
-        window.clearTimeout(timerId)
+        clearInterval(timerId)
     }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
             // setDate
-            setDate(new Date())
+            setDate(new Date)
         }, 1000)
         setTimerId(id)
     }
@@ -31,34 +29,22 @@ function Clock() {
         // close
         setShow(false)
     }
-    // 'Time' // fix with date
-    const stringTime =
-        `${getText(date?.getHours())}:` +
-        `${getText(date?.getMinutes())}:` +
-        `${getText(date?.getSeconds())}`
 
-    // 'Date' // fix with date
-    const stringDate =
-        `${getText(date?.getDate())}-` +
-        `${getText(date?.getMonth() + 1)}-` +
-        `${date?.getFullYear()}`
+    // const stringTime = 'Time' // fix with date
+    const stringTime = `${zero(date.getHours())}:${zero(date.getMinutes())}:${zero(date.getSeconds())}`
+    // const stringDate = 'Date' // fix with date
+    const stringDate = `${zero(date.getDate())}-${zero(date.getMonth()+1)}-${zero(date.getFullYear())}`
 
     return (
         <div>
-            <span
+            <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
                 {stringTime}
-            </span>
+                {show && ` [Date: ${stringDate}]`}
+            </div>
 
-            {show && (
-                <span style={{marginLeft: '10px'}}>
-                    {stringDate}
-                </span>
-            )}
-
-            <br/>
             <SuperButton onClick={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>
 
