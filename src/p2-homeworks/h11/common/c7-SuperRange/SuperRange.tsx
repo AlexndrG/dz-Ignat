@@ -13,9 +13,9 @@ type SuperRangePropsType = DefaultInputPropsType & { // и + ещё пропсы
 const SuperRange: React.FC<SuperRangePropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
-        onChange, onChangeRange,
+        onChange,
+        onChangeRange,
         className,
-
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
@@ -30,6 +30,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     return (
         <>
             <input
+                style={{boxSizing: 'border-box', width: '200px', height: '20px'}}
                 type={'range'}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
