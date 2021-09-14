@@ -1,11 +1,12 @@
 import React from 'react'
+import HW12 from '../../h12/HW12';
 
 export function JuniorPlus() {
     return (
         <div>
             <b>Page for future HomeWorks JUNIOR+ level.</b>
 
-            {/*<HW7/>*/}
+            <HW12/>
         </div>
     )
 }

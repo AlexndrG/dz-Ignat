@@ -1,3 +1,7 @@
+.main {
+    margin: 20px;
+}
+
 .dark {
     background: dimgrey;
 }
@@ -21,3 +25,12 @@
 .some-text {
     color: darkslateblue;
 }
+
+.new {
+    background: yellow;
+}
+
+.new-text {
+    color: black;
+}
+
